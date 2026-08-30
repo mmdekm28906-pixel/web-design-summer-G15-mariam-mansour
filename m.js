@@ -20,55 +20,6 @@ else {
 }
 
 
-for (var i = 1; i <= 10; i++) {
-
-    if (i == 3) {
-        continue;
-    }
-
-    if (i == 9) {
-        break;
-    }
-
-    console.log(i);
-}
-
-
-
-var start = 1;
-var end = 10;
-var skip = 3;
-var stop = 8;
-
-function check() {
-
-    if (
-        start !== undefined &&
-        end !== undefined &&
-        skip !== undefined &&
-        stop !== undefined
-    ) {
-
-        for (var i = start; i <= end; i++) {
-
-            if (i === skip) {
-                continue;
-            }
-
-            if (i === stop) {
-                break;
-            }
-
-            console.log(i);
-        }
-
-    } else {
-        alert("invalid values try again");
-    }
-}
-
-check();*/
-
 function myLoop(start, end, skip, stop) {
 
     if (
@@ -97,4 +48,17 @@ function myLoop(start, end, skip, stop) {
 }
 
 myLoop(1, 10, 3, 8);
-myLoop(1, 5)
+myLoop(1, 5); 
+*/
+var courses = ["HTML", "CSS", "javascript", "python"];
+
+var UserCourse = prompt("Enter course name");
+
+if (courses.includes(UserCourse)) {
+    alert("Found");
+} else {
+    courses.push(UserCourse);
+    alert(" your Course was added successfully");
+}
+
+console.log(courses);
