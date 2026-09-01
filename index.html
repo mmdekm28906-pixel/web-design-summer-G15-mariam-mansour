@@ -3,44 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>assignment</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section id="all">
-        <div class="leftSide">
-            <h1>Lets chat</h1>
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Repudiandae estprovident ex rerum inventore incidunt dicta  exercitationem cum a velit pariatur 
-                quibusdamat consequatur, cupiditate voluptatem, perspiciatis repellendus temporibus nulla.
-            </h3>
+  <form id="userForm">
+    <input type="text" id="name" placeholder="Name">
+    <input type="email" id="email" placeholder="Email">
 
-        </div>
+    <button type="submit">Add User</button>
+  </form>
 
+  <div class="user-box" id="users"></div>
 
-        <div class="rightSide">
-            <h2 >CONTACT</h2>
-            <div>
-             <form action="form.html" >
-
-                 <label for="required" class="required">*required</label>
-                 <br>
-                 <input name="name" type="text" placeholder="Name*" required>
-                 <br>
-                 <input name="email" type= "email" placeholder="Email*" required> 
-                 <br>
-                 <input name="Company" type="text" placeholder="Company*" required>
-                 <br>
-                 <input name="Phone" type="number" placeholder="Phone*" required>
-                 <br>
-                 <textarea name="message" id="message" cols="40" rows="4" required></textarea>
-                 <br>
-                 <button type="submit" id="button" >submit</button>
-
-             </form>
-            </div>
-        </div>
-
-    </section>
+ <script src="script.js"></script> 
 </body>
 </html>

@@ -1,17 +1,18 @@
-var courses = ["HTML" , "CSS" , "JS" , "Python"];
+var form = document.getElementById("userForm");
+var users = document.getElementById("users");
 
-var userCourse = prompt("enter course name");
+form.addEventListener("submit", function(e) {
+    e.preventDefault();
 
-var index = courses.findIndex(function(item)
-{
-    return item == userCourse;
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
 
+    var div = document.createElement("div");
+
+    div.innerHTML = name + "<br>" + email;
+
+    users.appendChild(div);
+
+    form.reset();
 });
-if(index != -1){
-    alert("found");
-}
-else{
-    courses.push(userCourse);
-    alert("course added successfully")
-}
-console.log(courses)
+div.classList.add("user-box");
